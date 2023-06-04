@@ -1,7 +1,7 @@
 import React from 'react'
 import arrow from '../../assets/img/arrow.svg'
 
-export const MainChoise: React.FC = () => {
+export const Choise: React.FC = () => {
 	return (
 		<div className='filter'>
 			<div className='filter-items'>

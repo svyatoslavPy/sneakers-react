@@ -1,12 +1,5 @@
 import React from 'react'
-
-interface CardSnikerI {
-	id: string
-	name: string
-	price: number
-	img: string
-	bg: string
-}
+import { CardSnikerI } from '~/utils/interfaces/interface'
 
 export const CardSniker: React.FC<CardSnikerI> = ({
 	id,

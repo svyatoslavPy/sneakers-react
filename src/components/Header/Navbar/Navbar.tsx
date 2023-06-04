@@ -1,9 +1,10 @@
 import React from 'react'
 import { HeaderLogo, User, Basket, Search } from './index'
+import { NavLayout } from '../../layout/navigation/NavLayout';
 
 export const Navbar: React.FC = () => {
 	return (
-		<nav className='nav'>
+		<NavLayout>
 			<div className='nav-logo'>
 				<img src={HeaderLogo} alt='logo'></img>
 			</div>
@@ -21,6 +22,6 @@ export const Navbar: React.FC = () => {
 				<img src={Basket}></img>
 				<img src={Search}></img>
 			</div>
-		</nav>
+		</NavLayout>
 	)
 }

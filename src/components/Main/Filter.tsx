@@ -1,13 +1,15 @@
 import React, { useState } from 'react'
 import { btn } from '../../data/btn'
-import { sortSnikersByMinPrice } from '../../store/slices/sliceSnikers'
-import { sortSnikersByMaxPrice } from '../../store/slices/sliceSnikers'
-import { sortSnikersByNewest } from '../../store/slices/sliceSnikers'
-import { setFlagHandler } from '../../store/slices/sliceSnikers'
+import {
+	sortSnikersByMinPrice,
+	sortSnikersByMaxPrice,
+	sortSnikersByNewest,
+	setFlagHandler,
+} from '../../store/slices/sliceSnikers'
 import { AppDispatch } from '~/store/store'
 import { useDispatch } from 'react-redux'
 
-export const MainFilter: React.FC = () => {
+export const Filter: React.FC = () => {
 	const [idx, setIdx] = useState<number>(-1)
 	const dispatch = useDispatch<AppDispatch>()
 

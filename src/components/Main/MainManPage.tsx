@@ -1,17 +1,17 @@
 import React from 'react'
 import { MainLayout } from '../layout/main/MainLayout'
-import { MainTitle } from './MainTitle'
-import { MainFilters } from './MainFilters'
+import { Title } from './Title'
+import { Filters } from './Filters'
 import { CardSnikers } from './CardSnikers'
 import { SectionSnikersLayout } from '../layout/main/SectionSnikersLayout'
 import { Footer } from './Footer'
 
-export const Main: React.FC = () => {
+export const MainManPage: React.FC = () => {
 	return (
 		<MainLayout>
-			<MainTitle />
+			<Title />
 			<SectionSnikersLayout>
-				<MainFilters />
+				<Filters />
 				<CardSnikers />
 			</SectionSnikersLayout>
 			<Footer />
