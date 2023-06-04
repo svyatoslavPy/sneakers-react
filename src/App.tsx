@@ -1,5 +1,5 @@
 import React from 'react'
-import { Manpage } from './components/Manpage/Manpage'
+import { Menpage } from './components/Menpage/Menpage'
 import { Homepage } from './components/Homepage/Homepage'
 import { BrowserRouter } from 'react-router-dom'
 import { Routes, Route } from 'react-router-dom'
@@ -9,7 +9,7 @@ export const App: React.FC = () => {
 		<BrowserRouter>
 			<Routes>
 				<Route path='/' element={<Homepage />} />
-				<Route path='/man' element={<Manpage />} />
+				<Route path='/Men' element={<Menpage />} />
 			</Routes>
 		</BrowserRouter>
 	)

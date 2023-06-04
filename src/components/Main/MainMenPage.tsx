@@ -6,7 +6,7 @@ import { CardSnikers } from './CardSnikers'
 import { SectionSnikersLayout } from '../layout/main/SectionSnikersLayout'
 import { Footer } from './Footer'
 
-export const MainManPage: React.FC = () => {
+export const MainMenPage: React.FC = () => {
 	return (
 		<MainLayout>
 			<Title />
