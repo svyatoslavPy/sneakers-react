@@ -3,8 +3,8 @@ import { Props } from '~/utils/interfaces/interface'
 
 export const MainLayout: React.FC<Props> = ({ children }) => {
 	return (
-		<header className='main'>
+		<main className='main'>
 			<div className='container'>{children}</div>
-		</header>
+		</main>
 	)
 }
