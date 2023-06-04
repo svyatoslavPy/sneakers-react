@@ -1,0 +1,30 @@
+.pagination {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	column-gap: 14px;
+	margin-bottom: 12px;
+
+	&__text {
+		font-family: 'Syne';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 24px;
+		color: #ffffff;
+
+		img {
+			margin-left: 10px;
+		}
+
+		span {
+			color: rgba(255, 255, 255, 0.37);
+		}
+	}
+
+	&__text--primary {
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}
