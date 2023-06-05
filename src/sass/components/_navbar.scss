@@ -4,6 +4,12 @@
 	align-items: center;
 	margin-top: 49px;
 
+	&-logo {
+		&:hover {
+			cursor: pointer;
+		}
+	}
+
 	.nav-links-inner {
 		display: flex;
 		flex-direction: column;

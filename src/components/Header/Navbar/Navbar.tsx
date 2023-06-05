@@ -1,16 +1,21 @@
 import React from 'react'
 import { HeaderLogo, User, Basket, Search } from './index'
-import { NavLayout } from '../../layout/navigation/NavLayout';
+import { NavLayout } from '../../layout/navigation/NavLayout'
+import { useNavigate } from 'react-router-dom'
 
 export const Navbar: React.FC = () => {
+	const navigate = useNavigate()
+
 	return (
 		<NavLayout>
-			<div className='nav-logo'>
+			<div onClick={() => navigate('/')} className='nav-logo'>
 				<img src={HeaderLogo} alt='logo'></img>
 			</div>
 			<div className='nav-links-inner'>
 				<div className='nav-links'>
-					<p className='nav-links__item'>Men</p>
+					<p onClick={() => navigate('/Men')} className='nav-links__item'>
+						Men
+					</p>
 					<p className='nav-links__item'>Women</p>
 					<p className='nav-links__item'>Kids</p>
 					<p className='nav-links__item'>Upcoming</p>
