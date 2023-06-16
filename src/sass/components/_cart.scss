@@ -1,0 +1,139 @@
+.cart {
+	display: flex;
+	align-items: center;
+	column-gap: 36px;
+	width: 65%;
+	margin-top: 27px;
+	padding-bottom: 24.48px;
+	border-bottom: 1px solid #898787;
+
+	&-picture {
+		img {
+			width: 200px;
+		}
+	}
+	&-title {
+		margin-top: 50px;
+		&__text {
+			font-family: 'Syne';
+			font-weight: 500;
+			font-size: 36px;
+			line-height: 43px;
+			color: #fcfcfc;
+		}
+
+		&__text--special {
+			font-family: 'Syne';
+			font-weight: 500;
+			font-size: 24px;
+			line-height: 29px;
+			color: #a8a8a8;
+			margin-top: 3px;
+		}
+
+		&__text--primary {
+			font-family: 'Syne';
+			font-weight: 500;
+			font-size: 26px;
+			line-height: 43px;
+			color: #fcfcfc;
+			margin-top: 4px;
+		}
+	}
+
+	&-items__inner {
+		display: flex;
+		gap: 71px;
+		.cart-items {
+			&__text {
+				font-family: 'Syne';
+				font-weight: 500;
+				font-size: 36px;
+				line-height: 43px;
+				color: #fcfcfc;
+				margin-bottom: 20px;
+			}
+
+			&__text--primary {
+				font-family: 'Syne';
+				font-weight: 500;
+				font-size: 24px;
+				line-height: 29px;
+				color: #a8a8a8;
+
+				span {
+					color: rgba(255, 255, 255, 1);
+				}
+			}
+
+			&-btns {
+				display: flex;
+				margin-top: 3px;
+				&__item {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					width: 34px;
+					height: 40px;
+					background: #968e8e;
+					outline: none;
+					border: none;
+
+					&:hover {
+						cursor: pointer;
+					}
+
+					img {
+						width: 18px;
+					}
+				}
+
+				&__item--primary {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					width: 115px;
+					height: 40px;
+					border: none;
+					outline: none;
+					background: #343434;
+					font-family: 'Syne';
+					font-weight: 500;
+					font-size: 26px;
+					color: #a8a8a8;
+				}
+			}
+		}
+
+		.cart-items-primary {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			font-family: 'Syne';
+			font-weight: 500;
+			color: #fcfcfc;
+			&__text {
+				font-size: 36px;
+				line-height: 43px;
+			}
+
+			&__text--special {
+				font-size: 24px;
+				line-height: 29px;
+
+				&:hover {
+					cursor: pointer;
+				}
+			}
+		}
+	}
+}
+
+.cart-items__text--empty {
+	font-family: 'Syne';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+	color: #ffffff;
+}

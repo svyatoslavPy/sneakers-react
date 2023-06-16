@@ -1,11 +1,12 @@
 import React from 'react'
 import { HeaderLayout } from '../layout/navigation/HeaderLayout'
-import { Navbar } from './Navbar/Navbar'
+import { NavBar } from './Navbar/NavBar'
 
 export const Header: React.FC = () => {
 	return (
 		<HeaderLayout>
-			<Navbar />
+			<NavBar />
 		</HeaderLayout>
 	)
 }
+

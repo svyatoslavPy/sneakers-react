@@ -14,3 +14,8 @@ declare module '*.png' {
 	const pngPath: string
 	export default pngPath
 }
+
+declare module '*.webp' {
+	const pngPath: string
+	export default pngPath
+}

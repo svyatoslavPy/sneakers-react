@@ -12,6 +12,12 @@
 
 	.card {
 		margin-bottom: 30px;
+		transition: 0.2s;
+		&:hover {
+			transition: 0.2s;
+			cursor: pointer;
+			transform: scale(1.02); /* Увеличиваем масштаб */
+		}
 		&-picture {
 			display: flex;
 			justify-content: center;

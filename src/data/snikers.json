@@ -1,0 +1,72 @@
+{
+	"snikers": [
+		{
+			"id": 1,
+			"name": "New Balance M1500",
+			"price": 120.5,
+			"bg": "card-picture--sniker1",
+			"img": "adidas",
+			"newest": true,
+			"sneaker1": "sneaker1black.webp",
+			"sneaker2": "sneaker2black.webp",
+			"sneaker3": "sneaker3black.webp",
+			"sneaker4": "sneaker4black.webp"
+		},
+		{
+			"id": 2,
+			"name": "Nike Air Max Dawn",
+			"price": 150.3,
+			"bg": "card-picture--sniker2",
+			"img": "sniker2",
+			"newest": true,
+			"sneaker1": "sneaker1green.webp",
+			"sneaker2": "sneaker2green.jpeg",
+			"sneaker3": "sneaker3green.webp",
+			"sneaker4": "sneaker4green.jpeg"
+		},
+		{
+			"id": 3,
+			"name": "Adidas Falcon Shoes",
+			"price": 110.2,
+			"bg": "card-picture--sniker3",
+			"img": "sniker3",
+			"sneaker1": "sneaker1purple.webp",
+			"sneaker2": "sneaker2purple.webp",
+			"sneaker3": "sneaker3purple.webp",
+			"sneaker4": "sneaker4purple.jpeg"
+		},
+		{
+			"id": 4,
+			"name": "Adidas Y-3",
+			"price": 170.4,
+			"bg": "card-picture--sniker4",
+			"img": "sniker4",
+			"sneaker1": "sneaker1red.webp",
+			"sneaker2": "sneaker2red.webp",
+			"sneaker3": "sneaker3red.webp",
+			"sneaker4": "sneaker4red.jpeg"
+		},
+		{
+			"id": 5,
+			"name": "PUMA RS-X Toys",
+			"price": 320.5,
+			"bg": "card-picture--sniker5",
+			"img": "sniker5",
+			"sneaker1": "sneaker1puma.webp",
+			"sneaker2": "sneaker2puma.webp",
+			"sneaker3": "sneaker3puma.jpeg",
+			"sneaker4": "sneaker4puma.webp"
+		},
+		{
+			"id": 6,
+			"name": "New Balance M1500",
+			"price": 120.5,
+			"bg": "card-picture--sniker6",
+			"img": "adidas",
+			"sneaker1": "sneaker1black.webp",
+			"sneaker2": "sneaker2black.webp",
+			"sneaker3": "sneaker3black.webp",
+			"sneaker4": "sneaker4black.webp"
+		}
+	]
+}

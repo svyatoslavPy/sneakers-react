@@ -3,7 +3,7 @@ import { HeaderLogo, User, Basket, Search } from './index'
 import { NavLayout } from '../../layout/navigation/NavLayout'
 import { useNavigate } from 'react-router-dom'
 
-export const Navbar: React.FC = () => {
+export const NavBar: React.FC = () => {
 	const navigate = useNavigate()
 
 	return (
