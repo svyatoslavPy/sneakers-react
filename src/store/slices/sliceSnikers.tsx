@@ -4,7 +4,8 @@ const { localStorage } = window
 
 const initialSnikersData = localStorage.getItem('snikersData')
 const initialSelectedSnikersData = localStorage.getItem('selectedSnikersData')
-const inittialCartData = localStorage.getItem('cartData')
+const initialCartData = localStorage.getItem('cartData')
+const initialQuantity = localStorage.getItem('quantity')
 
 const initialState: snikersSliceI = {
 	snikersData: initialSnikersData ? JSON.parse(initialSnikersData) : [],
@@ -12,20 +13,40 @@ const initialState: snikersSliceI = {
 		? JSON.parse(initialSelectedSnikersData)
 		: [],
 	snikersFilteredResults: [],
-	cartData: inittialCartData ? JSON.parse(inittialCartData) : [],
+	cartData: initialCartData ? JSON.parse(initialCartData) : [],
 	filterFlag: false,
-	price: undefined,
+	quantity: initialQuantity ? JSON.parse(initialQuantity) : 0,
 }
 
 export const snikersSlice = createSlice({
 	name: 'snikers',
 	initialState,
 	reducers: {
+		// 	case ADD_PRODUCT:
+		// const item = state.products.find(n => n.id === action.payload.id);
+		// return {
+		//   ...state,
+		//   products: item
+		//     ? state.products.map(n => n === item ? { ...n, count: n.count + 1 } : n)
+		//     : [ ...state.products, { ...action.payload, count: 1 } ],
+		// };
+
 		setAddToCart: (state, action: any) => {
-			;[...state.cartData, state.cartData.push(action.payload)]
-		},
-		setSumAndQuantity: (state, action: any) => { 
-			state.price = action.payload;
+			const selectedSniker = state.snikersData.find(
+				(sniker: any) => sniker.id === action.payload
+			)
+
+			if (selectedSniker) {
+				;[...state.cartData, state.cartData.push(selectedSniker)]
+				//		console.log(selectedSniker.quantity);
+			}
+			// const haveInCart = state.cartData.some(
+			// 	(item: any) => item.id === action.payload
+			// )
+			// localStorage.setItem('quantity', state.quantity.toString())
+			// if (haveInCart) {
+			// 	state.quantity = state.quantity + 1
+			// }
 		},
 		setDeleteToCart: (state, action: any) => {
 			state.cartData = state.cartData.filter(
@@ -71,7 +92,6 @@ export const {
 	sortSnikersByNewest,
 	setFlag,
 	setAddToCart,
-	setSumAndQuantity,
 	setDeleteToCart,
 	setSelectedSnikersData,
 } = snikersSlice.actions
@@ -110,6 +130,5 @@ export const setDeleteInCartHandler = (id: any) => (dispatch: any) => {
 export const setFlagHandler = (act: any) => (dispatch: any) => {
 	dispatch(setFlag(act))
 }
-
 
 export default snikersSlice.reducer

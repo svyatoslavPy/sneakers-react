@@ -4,7 +4,6 @@ import { MainLayout } from '../layout/main/MainLayout'
 import { ProductPicture } from '../ProductPage/ProductPicture'
 import { ProductItems } from '../ProductPage/ProductItems'
 import { SectionProductsLayout } from '../layout/main/SectionProducts'
-import { SectionSideBarCartLayout } from '../layout/main/SectionSideBarCartLayout'
 
 export const MainProductPage: React.FC = () => {
 	return (
@@ -13,9 +12,6 @@ export const MainProductPage: React.FC = () => {
 				<ProductPicture />
 				<ProductItems />
 			</SectionProductsLayout>
-			<SectionSideBarCartLayout>
-				
-			</SectionSideBarCartLayout>
 		</MainLayout>
 	)
 }

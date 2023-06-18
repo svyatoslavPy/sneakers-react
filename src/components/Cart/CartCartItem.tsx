@@ -1,18 +1,26 @@
-import React, { useMemo, useState } from 'react'
+import React, { useEffect, useMemo, useState } from 'react'
 import minus from '../../assets/img/-.svg'
 import addition from '../../assets/img/addition.svg'
 import { setDeleteInCartHandler } from '../../store/slices/sliceSnikers'
 import { useDispatch } from 'react-redux'
 import { AppDispatch } from '~/store/store'
 import { CartCartItemI } from '~/utils/interfaces/interface'
+import { useSelector } from 'react-redux'
+
 
 export const CartCartItem: React.FC<CartCartItemI> = ({
 	id,
 	sneaker1,
 	price,
 	name,
+	size,
 }) => {
 	const dispatch = useDispatch<AppDispatch>()
+	const cartData = useSelector((state: any) => state.snikers);
+
+	useEffect(() => {
+		console.log(cartData);
+	})
 
 	const [quantity, setQuantity] = useState(1)
 	const priced = useMemo(() => Math.floor(quantity * price), [quantity])
@@ -35,7 +43,7 @@ export const CartCartItem: React.FC<CartCartItemI> = ({
 
 	return (
 		<div className='cart'>
-			<div className='cart-picture'>
+			<div className='cart-picture'> 	08
 				<img src={`/src/assets/img/${sneaker1}`} alt='cart-picture'></img>
 			</div>
 			<div className='cart-items__inner'>
@@ -43,7 +51,7 @@ export const CartCartItem: React.FC<CartCartItemI> = ({
 					<p className='cart-items__text'>{name}</p>
 					<p className='cart-items__text--primary'>Men’s footwear</p>
 					<p className='cart-items__text--primary'>
-						Size: <span>8</span>
+						Size: <span>{size}</span>
 					</p>
 					<p className='cart-items__text--primary'>
 						Estimated delivery : <span>12 - 16 April</span>

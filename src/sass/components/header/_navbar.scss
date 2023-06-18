@@ -59,11 +59,20 @@
 		display: flex;
 		align-items: center;
 		gap: 28.5px;
-
+		position: relative;
 		img {
 			&:hover {
 				cursor: pointer;
 			}
+		}
+
+		&__item {
+			top: 10.5px;
+			left: 48.5px;
+			font-size: 17px;
+			color: white;
+			font-family: 'Syne';
+			position: absolute;
 		}
 	}
 }

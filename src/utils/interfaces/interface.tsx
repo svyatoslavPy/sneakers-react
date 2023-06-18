@@ -15,8 +15,7 @@ export interface snikersSliceI {
 	snikersFilteredResults: Array<string | number>
 	selectedSnikersData: Array<string | number>
 	filterFlag: boolean
-	cartData: Array<string | number> ,
-	price: any
+	cartData: Array<string | number>
 }
 
 export interface SelectedSnikersData {
@@ -33,4 +32,5 @@ export interface CartCartItemI {
 	sneaker1: string
 	price: number
 	name: string
+	size: number
 }

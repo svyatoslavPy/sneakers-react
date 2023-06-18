@@ -6,6 +6,7 @@
 			"price": 120.5,
 			"bg": "card-picture--sniker1",
 			"img": "adidas",
+			"size": 40,
 			"newest": true,
 			"sneaker1": "sneaker1black.webp",
 			"sneaker2": "sneaker2black.webp",
@@ -14,6 +15,7 @@
 		},
 		{
 			"id": 2,
+			"size": 39,
 			"name": "Nike Air Max Dawn",
 			"price": 150.3,
 			"bg": "card-picture--sniker2",
@@ -26,6 +28,7 @@
 		},
 		{
 			"id": 3,
+			"size": 41,
 			"name": "Adidas Falcon Shoes",
 			"price": 110.2,
 			"bg": "card-picture--sniker3",
@@ -37,6 +40,7 @@
 		},
 		{
 			"id": 4,
+			"size": 42,
 			"name": "Adidas Y-3",
 			"price": 170.4,
 			"bg": "card-picture--sniker4",
@@ -48,6 +52,7 @@
 		},
 		{
 			"id": 5,
+			"size": 40,
 			"name": "PUMA RS-X Toys",
 			"price": 320.5,
 			"bg": "card-picture--sniker5",
@@ -59,6 +64,7 @@
 		},
 		{
 			"id": 6,
+			"size": 38.5,
 			"name": "New Balance M1500",
 			"price": 120.5,
 			"bg": "card-picture--sniker6",

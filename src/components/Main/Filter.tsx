@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { btn } from '../../data/btn'
+import { btn } from '../../data/btns'
 import {
 	sortSnikersByMinPrice,
 	sortSnikersByMaxPrice,
@@ -30,7 +30,7 @@ export const Filter: React.FC = () => {
 		<div className='filter'>
 			<div className='filter-items'>
 				<p className='filter-items__text'>Filters</p>
-				{btn.map((element, i) => (
+				{btn.map((element: any, i: any) => (
 					<button
 						key={i}
 						onClick={() => setIdxHandler(i, element)}

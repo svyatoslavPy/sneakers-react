@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { sizeData } from '../../data/btn'
+import { sizeData } from '../../data/btns';
 import { useSelector } from 'react-redux'
 import { RootState } from '~/store/store'
 import { SelectedSnikersData } from '~/utils/interfaces/interface'
@@ -27,10 +27,10 @@ export const ProductItems: React.FC = () => {
 
 	const buyProduct = () => {
 		const haveProductInCart = CartCard.some((item: any) => item.id === id)
-		const selectedSniker = snikersData.find((sniker: any) => sniker.id === id)
+		// const selectedSniker = snikersData.find((sniker: any) => sniker.id === id)
 
 		if (!haveProductInCart) {
-			dispatch(setAddToCartHandler(selectedSniker))
+			dispatch(setAddToCartHandler(id))
 		} else {
 			setErr(true)
 			setTimeout(() => {
